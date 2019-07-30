@@ -17,11 +17,11 @@ def words_five_letters_long(text)
   new_text_array = []
   original_string = text.split(" ")
   original_string.each do |word|
-    if word.match(/^[a-zA-Z]{5}$/)
-      new_text_array.push(word)
-    end
-    return new_text_array
+  if word.match(/^[a-zA-Z]{5}$/)
+    new_text_array.push(word)
   end
+end
+return new_text_array
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
